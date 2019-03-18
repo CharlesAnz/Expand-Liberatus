@@ -48,8 +48,7 @@ public class PlayerController : MonoBehaviour {
 	}
 
     void FixedUpdate()
-    {
-
+    { 
         CharacterMovement();
 
     }
@@ -95,12 +94,12 @@ public class PlayerController : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.A))
         {
             move = true;
-            if (Input.GetKey(KeyCode.D))
+            if (Input.GetKeyDown(KeyCode.D))
             {
                 faceright = true;
             }
 
-            if (Input.GetKey(KeyCode.A))
+            if (Input.GetKeyDown(KeyCode.A))
             {
                 faceright = false;
                 //myRigidbody.velocity = new Vector2(-moveSpeed, myRigidbody.velocity.y);
