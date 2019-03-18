@@ -5,24 +5,37 @@ public class PlayerController : MonoBehaviour {
 
 
 	public float moveSpeed;
-	public float jumpForce;
+    public float jumpForce;
 
 	public float dashTime;
 	private float dashTimeCounter;
+    private bool move;
+    private bool faceright;
 
 	private Rigidbody2D myRigidbody;
+    private Animator m_Anim; 
 
 	public float dashSpeed;
 
 
-	public bool grounded;
+    public bool grounded;
 	public LayerMask whatIsGround;
 
 	private Collider2D myCollider;
 
 
-	// Use this for initialization
-	void Start () {
+
+    private void Awake()
+    {
+        // Setting up references.
+
+        m_Anim = GetComponent<Animator>();
+        myRigidbody = GetComponent<Rigidbody2D>();
+    }
+
+
+    // Use this for initialization
+    void Start () {
 		myRigidbody = GetComponent<Rigidbody2D>();
 
 
@@ -33,9 +46,15 @@ public class PlayerController : MonoBehaviour {
 
 
 	}
-	
-	// Update is called once per frame
-	void Update () {
+
+    void FixedUpdate()
+    {
+
+        CharacterMovement();
+
+    }
+        // Update is called once per frame
+        void Update () {
 	
 		//Detects whether the player is on the ground
 		grounded = Physics2D.IsTouchingLayers (myCollider, whatIsGround);
@@ -43,40 +62,24 @@ public class PlayerController : MonoBehaviour {
 
 
 		//Character moving forward at a constant speed
-		myRigidbody.velocity = new Vector2(moveSpeed, myRigidbody.velocity.y);
+		//myRigidbody.velocity = new Vector2(moveSpeed, myRigidbody.velocity.y);
 	
 
-		//If shift is pressed, character will move forward quicker
-		if (dashTimeCounter > 1.7) 
-		{
-			if (Input.GetKey (KeyCode.LeftShift)) 
-				{
-					myRigidbody.velocity = new Vector2 (moveSpeed * dashSpeed, myRigidbody.velocity.y);
-					characterJump ();
-				}
-			dashTimeCounter -= Time.deltaTime;
-			}
-			
-		if (Input.GetKeyUp (KeyCode.LeftShift)) 
-		{
-			dashTimeCounter = 0;
-		}
-
-		if (grounded)
-		{
-			dashTimeCounter = dashTime;
-		}
+		
+		
 
 
 		//If spacebar or mouse button is pushed then character will jump
-		characterJump();
-	
+		CharacterJump();
+
+        //Controls character movement
+  
 	
 	
 	
 	}
 
-	void characterJump()
+	void CharacterJump()
 	{
 		if (Input.GetKeyDown (KeyCode.Space) || Input.GetMouseButtonDown (0)) 
 		{
@@ -85,4 +88,55 @@ public class PlayerController : MonoBehaviour {
 			}
 		}
 	}
+
+    void CharacterMovement()
+    {
+        //if A or D key is press character movess left or right
+        if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.A))
+        {
+            move = true;
+            if (Input.GetKey(KeyCode.D))
+            {
+                faceright = true;
+            }
+
+            if (Input.GetKey(KeyCode.A))
+            {
+                faceright = false;
+                //myRigidbody.velocity = new Vector2(-moveSpeed, myRigidbody.velocity.y);
+            }
+        }
+
+        if (move && faceright)
+        {
+            myRigidbody.velocity = new Vector2(moveSpeed, myRigidbody.velocity.y);
+        }
+
+        if (move && !faceright)
+        {
+            myRigidbody.velocity = new Vector2(-moveSpeed, myRigidbody.velocity.y);
+
+        }
+
+        //If shift is pressed, character will move forward quicker
+            if (dashTimeCounter > 1.7)
+        {
+            if (Input.GetKey(KeyCode.LeftShift))
+            {
+                myRigidbody.velocity = new Vector2(moveSpeed * dashSpeed, myRigidbody.velocity.y);
+            }
+
+            dashTimeCounter -= Time.deltaTime;
+        }
+
+        if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            dashTimeCounter = 0;
+        }
+
+        if (grounded)
+        {
+            dashTimeCounter = dashTime;
+        }
+    }
 }
