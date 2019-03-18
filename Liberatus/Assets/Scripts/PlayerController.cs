@@ -59,17 +59,8 @@ public class PlayerController : MonoBehaviour {
 		grounded = Physics2D.IsTouchingLayers (myCollider, whatIsGround);
 
 
-
-		//Character moving forward at a constant speed
-		//myRigidbody.velocity = new Vector2(moveSpeed, myRigidbody.velocity.y);
-	
-
-		
-		
-
-
-		//If spacebar or mouse button is pushed then character will jump
-		CharacterJump();
+        //If spacebar or mouse button is pushed then character will jump
+        CharacterJump();
 
         //Controls character movement
   
@@ -94,6 +85,7 @@ public class PlayerController : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.A))
         {
             move = true;
+            m_Anim.SetBool("Movement", move);
             if (Input.GetKeyDown(KeyCode.D))
             {
                 faceright = true;
@@ -104,6 +96,10 @@ public class PlayerController : MonoBehaviour {
                 faceright = false;
                 //myRigidbody.velocity = new Vector2(-moveSpeed, myRigidbody.velocity.y);
             }
+        }
+        else
+        {
+            move = false;
         }
 
         if (move && faceright)
