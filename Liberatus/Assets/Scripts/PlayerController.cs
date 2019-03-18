@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityStandardAssets.CrossPlatformInput;
 
 public class PlayerController : MonoBehaviour {
 
@@ -13,7 +14,8 @@ public class PlayerController : MonoBehaviour {
     private bool faceright;
 
 	private Rigidbody2D myRigidbody;
-    private Animator m_Anim; 
+    private Animator m_Anim;
+    private Transform mytransform; 
 
 	public float dashSpeed;
 
@@ -31,6 +33,7 @@ public class PlayerController : MonoBehaviour {
 
         m_Anim = GetComponent<Animator>();
         myRigidbody = GetComponent<Rigidbody2D>();
+        mytransform = GetComponent<Transform>();
     }
 
 
@@ -48,26 +51,19 @@ public class PlayerController : MonoBehaviour {
 	}
 
     void FixedUpdate()
-    { 
-        CharacterMovement();
-
-    }
-        // Update is called once per frame
-        void Update () {
-	
-		//Detects whether the player is on the ground
-		grounded = Physics2D.IsTouchingLayers (myCollider, whatIsGround);
+    {
+        //Detects whether the player is on the ground
+        grounded = Physics2D.IsTouchingLayers(myCollider, whatIsGround);
 
 
         //If spacebar or mouse button is pushed then character will jump
         CharacterJump();
 
         //Controls character movement
-  
-	
-	
-	
-	}
+        float h = CrossPlatformInputManager.GetAxis("Horizontal");
+        CharacterMovement(h);
+
+    }
 
 	void CharacterJump()
 	{
@@ -79,37 +75,30 @@ public class PlayerController : MonoBehaviour {
 		}
 	}
 
-    void CharacterMovement()
+    void CharacterMovement(float m)
     {
-        //if A or D key is press character movess left or right
-        if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.A))
-        {
-            move = true;
-            m_Anim.SetBool("Movement", move);
-            if (Input.GetKeyDown(KeyCode.D))
-            {
-                faceright = true;
-            }
+        m_Anim.SetFloat("Speed", Mathf.Abs(m));
+        m_Anim.SetBool("FaceRight", faceright);
 
-            if (Input.GetKeyDown(KeyCode.A))
-            {
-                faceright = false;
-                //myRigidbody.velocity = new Vector2(-moveSpeed, myRigidbody.velocity.y);
-            }
-        }
-        else
+        if (Input.GetKey(KeyCode.D))
         {
-            move = false;
+            faceright = true;
+            mytransform.eulerAngles = new Vector2(0, 0);
+        }
+        if (Input.GetKey(KeyCode.A))
+        {
+            faceright = false;
+            mytransform.eulerAngles = new Vector2(0, 180);
         }
 
-        if (move && faceright)
+        if (m > 0 && faceright)
         {
-            myRigidbody.velocity = new Vector2(moveSpeed, myRigidbody.velocity.y);
+            myRigidbody.velocity = new Vector2(m * moveSpeed, myRigidbody.velocity.y);
         }
 
-        if (move && !faceright)
+        if (m < 0 && !faceright)
         {
-            myRigidbody.velocity = new Vector2(-moveSpeed, myRigidbody.velocity.y);
+            myRigidbody.velocity = new Vector2(m * moveSpeed, myRigidbody.velocity.y);
 
         }
 
