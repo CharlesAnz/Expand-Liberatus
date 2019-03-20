@@ -2225,7 +2225,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 2.0099297
+  orthographic size: 2.62
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -4464,15 +4464,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: Roman
       objectReference: {fileID: 0}
+    - target: {fileID: 8189833835335372074, guid: 0e1da30fac003451fb4c5234c7cfda22,
+        type: 3}
+      propertyPath: moveSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8189833835335372074, guid: 0e1da30fac003451fb4c5234c7cfda22,
+        type: 3}
+      propertyPath: jumpForce
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8189833835335372077, guid: 0e1da30fac003451fb4c5234c7cfda22,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.1769133
+      value: 4.132
       objectReference: {fileID: 0}
     - target: {fileID: 8189833835335372077, guid: 0e1da30fac003451fb4c5234c7cfda22,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.0246673
+      value: -2.09
       objectReference: {fileID: 0}
     - target: {fileID: 8189833835335372077, guid: 0e1da30fac003451fb4c5234c7cfda22,
         type: 3}
@@ -4522,27 +4532,17 @@ PrefabInstance:
     - target: {fileID: 8189833835335372077, guid: 0e1da30fac003451fb4c5234c7cfda22,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.73
+      value: 0.59276
       objectReference: {fileID: 0}
     - target: {fileID: 8189833835335372077, guid: 0e1da30fac003451fb4c5234c7cfda22,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.73
+      value: 0.59276
       objectReference: {fileID: 0}
     - target: {fileID: 8189833835335372077, guid: 0e1da30fac003451fb4c5234c7cfda22,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.73
-      objectReference: {fileID: 0}
-    - target: {fileID: 8189833835335372074, guid: 0e1da30fac003451fb4c5234c7cfda22,
-        type: 3}
-      propertyPath: moveSpeed
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8189833835335372074, guid: 0e1da30fac003451fb4c5234c7cfda22,
-        type: 3}
-      propertyPath: jumpForce
-      value: 10
+      value: 0.59276
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e1da30fac003451fb4c5234c7cfda22, type: 3}
