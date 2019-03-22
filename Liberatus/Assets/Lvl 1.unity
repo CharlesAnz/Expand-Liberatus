@@ -732,6 +732,10 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 248394799}
+    - target: {fileID: 457540134, guid: dd1ca42770c1c473993789698cd9d53f, type: 3}
+      propertyPath: WallDetectionRayLength
+      value: 0.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd1ca42770c1c473993789698cd9d53f, type: 3}
 --- !u!1 &248394799 stripped
