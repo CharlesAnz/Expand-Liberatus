@@ -2,28 +2,24 @@
 using System.Collections;
 using UnityStandardAssets.CrossPlatformInput;
 
-public class PlayerController : MonoBehaviour {
+public class PlayerController : MonoBehaviour
+{
 
 
-	public float moveSpeed;
+    public float moveSpeed;
     public float jumpForce;
 
-	public float dashTime;
-	private float dashTimeCounter;
-    private bool move;
+    private bool attack;
     private bool faceright;
 
-	private Rigidbody2D myRigidbody;
+    private Rigidbody2D myRigidbody;
     private Animator m_Anim;
-    private Transform mytransform; 
-
-	public float dashSpeed;
-
+    private Transform mytransform;
 
     public bool grounded;
-	public LayerMask whatIsGround;
+    public LayerMask whatIsGround;
 
-	private Collider2D myCollider;
+    private Collider2D myCollider;
 
 
 
@@ -38,23 +34,21 @@ public class PlayerController : MonoBehaviour {
 
 
     // Use this for initialization
-    void Start () {
-		myRigidbody = GetComponent<Rigidbody2D>();
+    void Start()
+    {
+        myRigidbody = GetComponent<Rigidbody2D>();
 
 
-		myCollider = GetComponent<Collider2D> ();
+        myCollider = GetComponent<Collider2D>();
 
-		dashTimeCounter = dashTime;
-
-
-
-	}
+    }
 
     void FixedUpdate()
     {
         //Detects whether the player is on the ground
         grounded = Physics2D.IsTouchingLayers(myCollider, whatIsGround);
 
+        CharacterAttack();
 
         //If spacebar or mouse button is pushed then character will jump
         CharacterJump();
@@ -63,17 +57,20 @@ public class PlayerController : MonoBehaviour {
         float h = CrossPlatformInputManager.GetAxis("Horizontal");
         CharacterMovement(h);
 
+
+
     }
 
-	void CharacterJump()
-	{
-		if (Input.GetKeyDown (KeyCode.Space) || Input.GetMouseButtonDown (0)) 
-		{
-			if(grounded){
-				myRigidbody.velocity = new Vector2(myRigidbody.velocity.x, jumpForce);
-			}
-		}
-	}
+    void CharacterJump()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if (grounded)
+            {
+                myRigidbody.velocity = new Vector2(myRigidbody.velocity.x, jumpForce);
+            }
+        }
+    }
 
     void CharacterMovement(float m)
     {
@@ -95,32 +92,39 @@ public class PlayerController : MonoBehaviour {
         {
             myRigidbody.velocity = new Vector2(m * moveSpeed, myRigidbody.velocity.y);
         }
+        else if (m>0 && faceright && attack)
+        {
+            myRigidbody.velocity = new Vector2(m * (moveSpeed / 2), myRigidbody.velocity.y);
+        }
 
         if (m < 0 && !faceright)
         {
             myRigidbody.velocity = new Vector2(m * moveSpeed, myRigidbody.velocity.y);
 
         }
-
-        //If shift is pressed, character will move forward quicker
-            if (dashTimeCounter > 1.7)
+        else if (m < 0 && !faceright && attack)
         {
-            if (Input.GetKey(KeyCode.LeftShift))
-            {
-                myRigidbody.velocity = new Vector2(moveSpeed * dashSpeed, myRigidbody.velocity.y);
-            }
-
-            dashTimeCounter -= Time.deltaTime;
+            myRigidbody.velocity = new Vector2(m * (moveSpeed / 2), myRigidbody.velocity.y);
         }
 
-        if (Input.GetKeyUp(KeyCode.LeftShift))
+    }
+
+
+
+    void CharacterAttack()
+    {
+        m_Anim.SetBool("Attack", attack);
+
+        if (Input.GetKey(KeyCode.LeftShift))
         {
-            dashTimeCounter = 0;
+            attack = true;
+        }
+        //else if (Input.GetKeyUp(KeyCode.LeftShift))
+        else
+        {
+            attack = false;
         }
 
-        if (grounded)
-        {
-            dashTimeCounter = dashTime;
-        }
+
     }
 }
