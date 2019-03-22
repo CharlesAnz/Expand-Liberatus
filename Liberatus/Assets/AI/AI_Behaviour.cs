@@ -89,7 +89,7 @@ public class AI_Behaviour : MonoBehaviour
     {
        if( collision.gameObject.tag == "Player")
        {
-            gameObject.SetActive(false);
+            //gameObject.SetActive(false);
        }
     }
 }
