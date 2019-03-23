@@ -20,21 +20,34 @@ public class AI_Behaviour : MonoBehaviour
 
     [SerializeField]
     private bool movingRight = false;
+    private bool death;
+    public bool attack;
 
     public Transform groundDetection;
     public Transform wallDetection;
     public GameObject target;
 
-    
+    private Animator m_Anim;
+    private Collider2D myCollider;
+
+
+    private void Awake()
+    {
+        m_Anim = GetComponent<Animator>();
+    }
 
     void Update()
     {
-         Move();
+        m_Anim.SetBool("Attack", attack);
+        m_Anim.SetBool("Die", death);
+
+        Move();
     }
 
     void Patrol()
     {
         speed = 1;
+        //attack = false;
         transform.Translate(Vector2.right * speed * Time.deltaTime);
         
 
@@ -78,20 +91,21 @@ public class AI_Behaviour : MonoBehaviour
     {
         speed = 2;
 
-        if (Vector2.Distance(transform.position, target.transform.position) <= 5)
+        if (Vector2.Distance(transform.position, target.transform.position) <= 5
+        && Vector2.Distance(transform.position, target.transform.position) > 1)
         {
             transform.position = Vector2.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
         }
-        else Patrol();
-    }
 
-    private void OnCollisionEnter2D(Collision2D collision) // deactivate when colliding with player
-    {
-       if( collision.gameObject.tag == "Player")
-       {
-            //gameObject.SetActive(false);
-       }
-    }
+        else if (Vector2.Distance(transform.position, target.transform.position) <= 1)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
+
+            attack = true;
+            //death = true; 
+        }
+        else Patrol();
+      }
 }
 
 
