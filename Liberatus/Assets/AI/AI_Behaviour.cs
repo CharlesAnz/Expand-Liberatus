@@ -17,6 +17,8 @@ public class AI_Behaviour : MonoBehaviour
     public float GroundDetectionRayLength;
     [Range(0, 10)]
     public float WallDetectionRayLength;
+    [Range(0, 10)]
+    public float BackDetectionRayLength;
 
     [SerializeField]
     private bool movingRight = false;
@@ -25,6 +27,7 @@ public class AI_Behaviour : MonoBehaviour
 
     public Transform groundDetection;
     public Transform wallDetection;
+    public Transform backDetection;
     public GameObject target;
 
     private Animator m_Anim;
@@ -46,15 +49,16 @@ public class AI_Behaviour : MonoBehaviour
 
     void Patrol()
     {
-        speed = 1;
-        //attack = false;
+        //speed = 1;
+        attack = false;
         transform.Translate(Vector2.right * speed * Time.deltaTime);
-        
+
 
         RaycastHit2D hit = Physics2D.Raycast(groundDetection.position, Vector2.down, GroundDetectionRayLength);
         RaycastHit2D hitWall = Physics2D.Raycast(wallDetection.position, Vector2.left, WallDetectionRayLength);
+        RaycastHit2D backhit = Physics2D.Raycast(backDetection.position, Vector2.right, BackDetectionRayLength);
 
-        if (hit.collider == false ) // Raycast for ground detection
+        if (hit.collider == false) // Raycast for ground detection
         {
             if (movingRight == true)
             {
@@ -80,20 +84,36 @@ public class AI_Behaviour : MonoBehaviour
                 movingRight = true;
             }
         }
+
+        if (backhit.collider == true) // Raycast for wall detection
+        {
+            if (movingRight == true)
+            {
+                transform.eulerAngles = new Vector3(0, -180, 0);
+                movingRight = false;
+            }
+            else
+            {
+                transform.eulerAngles = new Vector3(0, 0, 0);
+                movingRight = true;
+            }
+
+        }
     }
 
-    void Move()
+        void Move()
     {
         ApproachPlayer();
     }
 
     void ApproachPlayer() // when player is less than 5 untis, approach with greater speed
     {
-        speed = 2;
+        //speed = 2;
 
-        if (Vector2.Distance(transform.position, target.transform.position) <= 5
+        if (Vector2.Distance(transform.position, target.transform.position) <= 3
         && Vector2.Distance(transform.position, target.transform.position) > 1)
         {
+            attack = false;
             transform.position = Vector2.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
         }
 
