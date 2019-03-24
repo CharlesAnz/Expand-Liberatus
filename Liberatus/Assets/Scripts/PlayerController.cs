@@ -9,6 +9,10 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed;
     public float jumpForce;
 
+    public Transform attackPos;
+    public float attackRange;
+    public LayerMask enemies;
+
     private bool attack;
     private bool faceright;
 
@@ -118,6 +122,13 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftShift))
         {
             attack = true;
+
+            Collider2D[] Hit = Physics2D.OverlapCircleAll(attackPos.position, attackRange, enemies);
+            for (int i = 0; i < Hit.Length; i ++)
+            {
+                Hit[i].GetComponent<AI_Behaviour>().death = true;
+            }
+
         }
         //else if (Input.GetKeyUp(KeyCode.LeftShift))
         else

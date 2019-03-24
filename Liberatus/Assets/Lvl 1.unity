@@ -620,7 +620,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &471412150
 Transform:
   m_ObjectHideFlags: 0
@@ -778,9 +778,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 457540133, guid: dd1ca42770c1c473993789698cd9d53f, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 457540139, guid: dd1ca42770c1c473993789698cd9d53f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.36
+      value: 7.04
       objectReference: {fileID: 0}
     - target: {fileID: 457540139, guid: dd1ca42770c1c473993789698cd9d53f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -842,6 +846,14 @@ PrefabInstance:
       propertyPath: movingRight
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 457540134, guid: dd1ca42770c1c473993789698cd9d53f, type: 3}
+      propertyPath: BackDetectionRayLength
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 457540134, guid: dd1ca42770c1c473993789698cd9d53f, type: 3}
+      propertyPath: behindRange
+      value: 0.75
+      objectReference: {fileID: 0}
     - target: {fileID: 457540138, guid: dd1ca42770c1c473993789698cd9d53f, type: 3}
       propertyPath: m_SortingLayerID
       value: -743521317
@@ -850,15 +862,39 @@ PrefabInstance:
       propertyPath: m_SortingLayer
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 457540136, guid: dd1ca42770c1c473993789698cd9d53f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6511248361269330260, guid: dd1ca42770c1c473993789698cd9d53f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.01
+      value: 0.47
       objectReference: {fileID: 0}
     - target: {fileID: 2141759159947301450, guid: dd1ca42770c1c473993789698cd9d53f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.33
+      value: 1.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 400225522303407679, guid: dd1ca42770c1c473993789698cd9d53f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 329747491835891218, guid: dd1ca42770c1c473993789698cd9d53f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070861139661772704, guid: dd1ca42770c1c473993789698cd9d53f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 7908519891235641324, guid: dd1ca42770c1c473993789698cd9d53f,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd1ca42770c1c473993789698cd9d53f, type: 3}
@@ -2833,7 +2869,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -4472,10 +4508,15 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8189833835335372075, guid: 0e1da30fac003451fb4c5234c7cfda22,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8189833835335372077, guid: 0e1da30fac003451fb4c5234c7cfda22,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.41
+      value: 5.56
       objectReference: {fileID: 0}
     - target: {fileID: 8189833835335372077, guid: 0e1da30fac003451fb4c5234c7cfda22,
         type: 3}
@@ -4551,6 +4592,11 @@ PrefabInstance:
         type: 3}
       propertyPath: jumpForce
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5685870525414760013, guid: 0e1da30fac003451fb4c5234c7cfda22,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e1da30fac003451fb4c5234c7cfda22, type: 3}

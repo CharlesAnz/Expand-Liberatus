@@ -17,17 +17,21 @@ public class AI_Behaviour : MonoBehaviour
     public float GroundDetectionRayLength;
     [Range(0, 10)]
     public float WallDetectionRayLength;
-    [Range(0, 10)]
-    public float BackDetectionRayLength;
 
     [SerializeField]
     private bool movingRight = false;
-    private bool death;
+    public bool death;
     public bool attack;
+    private float deathTimer;
+
+    public GameObject behindPos;
+    //public float behindRange;
+    public LayerMask Player;
+    public ContactFilter2D players;
+
 
     public Transform groundDetection;
     public Transform wallDetection;
-    public Transform backDetection;
     public GameObject target;
 
     private Animator m_Anim;
@@ -37,14 +41,26 @@ public class AI_Behaviour : MonoBehaviour
     private void Awake()
     {
         m_Anim = GetComponent<Animator>();
+        deathTimer = 2;
+        players.SetLayerMask(Player);
+        players.useLayerMask = true;
     }
 
     void Update()
     {
         m_Anim.SetBool("Attack", attack);
-        m_Anim.SetBool("Die", death);
+        m_Anim.SetBool("Death", death);
 
         Move();
+
+        if (death)
+        {
+            deathTimer -= Time.deltaTime;
+
+
+            if (deathTimer <= 0)
+                Destroy(gameObject);
+        }
     }
 
     void Patrol()
@@ -56,7 +72,6 @@ public class AI_Behaviour : MonoBehaviour
 
         RaycastHit2D hit = Physics2D.Raycast(groundDetection.position, Vector2.down, GroundDetectionRayLength);
         RaycastHit2D hitWall = Physics2D.Raycast(wallDetection.position, Vector2.left, WallDetectionRayLength);
-        RaycastHit2D backhit = Physics2D.Raycast(backDetection.position, Vector2.right, BackDetectionRayLength);
 
         if (hit.collider == false) // Raycast for ground detection
         {
@@ -84,21 +99,6 @@ public class AI_Behaviour : MonoBehaviour
                 movingRight = true;
             }
         }
-
-        if (backhit.collider == true) // Raycast for wall detection
-        {
-            if (movingRight == true)
-            {
-                transform.eulerAngles = new Vector3(0, -180, 0);
-                movingRight = false;
-            }
-            else
-            {
-                transform.eulerAngles = new Vector3(0, 0, 0);
-                movingRight = true;
-            }
-
-        }
     }
 
         void Move()
@@ -113,6 +113,23 @@ public class AI_Behaviour : MonoBehaviour
         if (Vector2.Distance(transform.position, target.transform.position) <= 3
         && Vector2.Distance(transform.position, target.transform.position) > 1)
         {
+
+
+            if (behindPos.GetComponent<Collider2D>().IsTouchingLayers(Player))
+            {
+                Debug.Log("Goddamnit fucking work already you shit");
+                if (movingRight == true)
+                {
+                    transform.eulerAngles = new Vector3(0, -180, 0);
+                    movingRight = false;
+                }
+                else
+                {
+                    transform.eulerAngles = new Vector3(0, 0, 0);
+                    movingRight = true;
+                }
+            }
+
             attack = false;
             transform.position = Vector2.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
         }
@@ -126,6 +143,16 @@ public class AI_Behaviour : MonoBehaviour
         }
         else Patrol();
       }
+
+    /*
+    private void OnCollisionEnter2D(Collision2D collision) // deactivate when colliding with player
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            gameObject.SetActive(false);
+        }
+    }
+    */
 }
 
 
