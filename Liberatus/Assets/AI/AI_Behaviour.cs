@@ -139,6 +139,7 @@ public class AI_Behaviour : MonoBehaviour
             transform.position = Vector2.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
 
             attack = true;
+            target.GetComponent<PlayerController>().health--;
             //death = true; 
         }
         else Patrol();
