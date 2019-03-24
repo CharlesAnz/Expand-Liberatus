@@ -147,6 +147,8 @@ public class PlayerController : MonoBehaviour
             for (int i = 0; i < Hit.Length; i++)
             {
                 Hit[i].GetComponent<AI_Behaviour>().death = true;
+
+                Debug.Log("Goddamnit fucking work already you shit");
             }
 
         }
@@ -157,6 +159,12 @@ public class PlayerController : MonoBehaviour
         }
 
 
+    }
+
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(attackPos.position, attackRange);
     }
 
 }

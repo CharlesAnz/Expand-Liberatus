@@ -55,6 +55,7 @@ public class AI_Behaviour : MonoBehaviour
 
         if (death)
         {
+            attack = false;
             deathTimer -= Time.deltaTime;
 
 
@@ -117,7 +118,7 @@ public class AI_Behaviour : MonoBehaviour
 
             if (behindPos.GetComponent<Collider2D>().IsTouchingLayers(Player))
             {
-                Debug.Log("Goddamnit fucking work already you shit");
+
                 if (movingRight == true)
                 {
                     transform.eulerAngles = new Vector3(0, -180, 0);
@@ -139,7 +140,8 @@ public class AI_Behaviour : MonoBehaviour
             transform.position = Vector2.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
 
             attack = true;
-            target.GetComponent<PlayerController>().health--;
+            if (attack && !death)
+                target.GetComponent<PlayerController>().health--;
             //death = true; 
         }
         else Patrol();
