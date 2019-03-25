@@ -41,7 +41,7 @@ public class AI_Behaviour : MonoBehaviour
     private void Awake()
     {
         m_Anim = GetComponent<Animator>();
-        deathTimer = 2;
+        deathTimer = 1.7F;
         players.SetLayerMask(Player);
         players.useLayerMask = true;
     }
