@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour
 
     private bool attack;
     private bool faceright;
-    private float deathTimer = 2;
+    private float deathTimer = 1.7F;
     public bool die;
     public float health;
 
