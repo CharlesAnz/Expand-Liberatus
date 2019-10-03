@@ -148,7 +148,7 @@ public class PlayerController : MonoBehaviour
             {
                 Hit[i].GetComponent<AI_Behaviour>().death = true;
 
-                Debug.Log("Goddamnit fucking work already you shit");
+                //Debug.Log("Goddamnit fucking work already you shit");
             }
 
         }
