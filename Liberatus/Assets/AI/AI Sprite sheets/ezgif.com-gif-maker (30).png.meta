@@ -1,29 +1,69 @@
 fileFormatVersion: 2
 guid: 99c73691c1bf34c07ac3f620adcbbb55
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: ezgif.com-gif-maker (30)_0
-    21300002: ezgif.com-gif-maker (30)_1
-    21300004: ezgif.com-gif-maker (30)_2
-    21300006: ezgif.com-gif-maker (30)_3
-    21300008: ezgif.com-gif-maker (30)_4
-    21300010: ezgif.com-gif-maker (30)_5
-    21300012: ezgif.com-gif-maker (30)_6
-    21300014: ezgif.com-gif-maker (30)_7
-    21300016: ezgif.com-gif-maker (30)_8
-    21300018: ezgif.com-gif-maker (30)_9
-    21300020: ezgif.com-gif-maker (30)_10
-    21300022: ezgif.com-gif-maker (30)_11
-    21300024: ezgif.com-gif-maker (30)_12
-    21300026: ezgif.com-gif-maker (30)_13
-    21300028: ezgif.com-gif-maker (30)_14
-    21300030: ezgif.com-gif-maker (30)_15
-    21300032: ezgif.com-gif-maker (30)_16
-    21300034: ezgif.com-gif-maker (30)_17
-    21300036: ezgif.com-gif-maker (30)_18
-    21300038: ezgif.com-gif-maker (30)_19
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: ezgif.com-gif-maker (30)_0
+  - first:
+      213: 21300002
+    second: ezgif.com-gif-maker (30)_1
+  - first:
+      213: 21300004
+    second: ezgif.com-gif-maker (30)_2
+  - first:
+      213: 21300006
+    second: ezgif.com-gif-maker (30)_3
+  - first:
+      213: 21300008
+    second: ezgif.com-gif-maker (30)_4
+  - first:
+      213: 21300010
+    second: ezgif.com-gif-maker (30)_5
+  - first:
+      213: 21300012
+    second: ezgif.com-gif-maker (30)_6
+  - first:
+      213: 21300014
+    second: ezgif.com-gif-maker (30)_7
+  - first:
+      213: 21300016
+    second: ezgif.com-gif-maker (30)_8
+  - first:
+      213: 21300018
+    second: ezgif.com-gif-maker (30)_9
+  - first:
+      213: 21300020
+    second: ezgif.com-gif-maker (30)_10
+  - first:
+      213: 21300022
+    second: ezgif.com-gif-maker (30)_11
+  - first:
+      213: 21300024
+    second: ezgif.com-gif-maker (30)_12
+  - first:
+      213: 21300026
+    second: ezgif.com-gif-maker (30)_13
+  - first:
+      213: 21300028
+    second: ezgif.com-gif-maker (30)_14
+  - first:
+      213: 21300030
+    second: ezgif.com-gif-maker (30)_15
+  - first:
+      213: 21300032
+    second: ezgif.com-gif-maker (30)_16
+  - first:
+      213: 21300034
+    second: ezgif.com-gif-maker (30)_17
+  - first:
+      213: 21300036
+    second: ezgif.com-gif-maker (30)_18
+  - first:
+      213: 21300038
+    second: ezgif.com-gif-maker (30)_19
   externalObjects: {}
-  serializedVersion: 9
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -43,6 +83,7 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -77,8 +118,10 @@ TextureImporter:
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
   platformSettings:
-  - serializedVersion: 2
+  - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -89,7 +132,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -100,6 +144,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -119,6 +164,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 6f4f7aa7d697248a6810966f57138bdc
+      internalID: 21300000
       vertices: []
       indices: 
       edges: []
@@ -139,6 +185,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: c96acefcc162143018ed42fc0bd83c7b
+      internalID: 21300002
       vertices: []
       indices: 
       edges: []
@@ -159,6 +206,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 9b418e74ea52b45f8be513d5f396627d
+      internalID: 21300004
       vertices: []
       indices: 
       edges: []
@@ -179,6 +227,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: bf412f98ea2de462190961c801449550
+      internalID: 21300006
       vertices: []
       indices: 
       edges: []
@@ -199,6 +248,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 4591c34f8eef34791996195f6fa90e38
+      internalID: 21300008
       vertices: []
       indices: 
       edges: []
@@ -219,6 +269,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: e7f409b2103f34ecf8752b7ec8300036
+      internalID: 21300010
       vertices: []
       indices: 
       edges: []
@@ -239,6 +290,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: bf8a35db2f0144300b4fe0289c9ce104
+      internalID: 21300012
       vertices: []
       indices: 
       edges: []
@@ -259,6 +311,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 575e422a7087d4ecd9afdff2fc9cbc92
+      internalID: 21300014
       vertices: []
       indices: 
       edges: []
@@ -279,6 +332,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 2147ef33be90a4c8f89c5b5ced3ebf6f
+      internalID: 21300016
       vertices: []
       indices: 
       edges: []
@@ -299,6 +353,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: d920d69dccdf4447b8f5fc7a584836b2
+      internalID: 21300018
       vertices: []
       indices: 
       edges: []
@@ -319,6 +374,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: a429cddad23f4419cb80968e32267eb4
+      internalID: 21300020
       vertices: []
       indices: 
       edges: []
@@ -339,6 +395,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 40da115eaba444d0995bd98c1bb919bd
+      internalID: 21300022
       vertices: []
       indices: 
       edges: []
@@ -359,6 +416,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: d722a477b7d444b75bbe3b80b18f966a
+      internalID: 21300024
       vertices: []
       indices: 
       edges: []
@@ -379,6 +437,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: dd5d73bbea9f041779be0dc9b03cd05c
+      internalID: 21300026
       vertices: []
       indices: 
       edges: []
@@ -399,6 +458,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: dc9425aacbe4c471db63e9fe29040201
+      internalID: 21300028
       vertices: []
       indices: 
       edges: []
@@ -419,6 +479,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: e3f7193d5c0d94e72ba4727c846ee1be
+      internalID: 21300030
       vertices: []
       indices: 
       edges: []
@@ -439,6 +500,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 1d352666f9353437795bbffdd2ac3cf6
+      internalID: 21300032
       vertices: []
       indices: 
       edges: []
@@ -459,6 +521,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: b0579be257360479ab65e7a4397220d0
+      internalID: 21300034
       vertices: []
       indices: 
       edges: []
@@ -479,6 +542,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 167cbff52a1c74d3ebcad43c80bb2533
+      internalID: 21300036
       vertices: []
       indices: 
       edges: []
@@ -499,6 +563,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 99204fb18c5054faabca88e58ae36010
+      internalID: 21300038
       vertices: []
       indices: 
       edges: []
@@ -507,10 +572,12 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 417b08bfc747e480f9187da5136deb72
+    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
+    secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

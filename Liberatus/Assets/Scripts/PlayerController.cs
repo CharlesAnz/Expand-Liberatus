@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityStandardAssets.CrossPlatformInput;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -9,8 +10,15 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed;
     public float jumpForce;
 
+    public Transform attackPos;
+    public float attackRange;
+    public LayerMask enemies;
+
     private bool attack;
     private bool faceright;
+    private float deathTimer = 1.7F;
+    public bool die;
+    public float health;
 
     private Rigidbody2D myRigidbody;
     private Animator m_Anim;
@@ -30,6 +38,7 @@ public class PlayerController : MonoBehaviour
         m_Anim = GetComponent<Animator>();
         myRigidbody = GetComponent<Rigidbody2D>();
         mytransform = GetComponent<Transform>();
+        health = 200;
     }
 
 
@@ -45,6 +54,21 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
+
+        m_Anim.SetBool("Die", die);
+        if (health <= 0)
+        {
+            die = true;
+        }
+        if (die)
+        {
+            deathTimer -= Time.deltaTime;
+
+
+            if (deathTimer <= 0)
+                SceneManager.LoadScene("Game Over");
+        }
+
         //Detects whether the player is on the ground
         grounded = Physics2D.IsTouchingLayers(myCollider, whatIsGround);
 
@@ -118,6 +142,15 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftShift))
         {
             attack = true;
+
+            Collider2D[] Hit = Physics2D.OverlapCircleAll(attackPos.position, attackRange, enemies);
+            for (int i = 0; i < Hit.Length; i++)
+            {
+                Hit[i].GetComponent<AI_Behaviour>().death = true;
+
+                //Debug.Log("Goddamnit fucking work already you shit");
+            }
+
         }
         //else if (Input.GetKeyUp(KeyCode.LeftShift))
         else
@@ -127,4 +160,11 @@ public class PlayerController : MonoBehaviour
 
 
     }
+
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(attackPos.position, attackRange);
+    }
+
 }

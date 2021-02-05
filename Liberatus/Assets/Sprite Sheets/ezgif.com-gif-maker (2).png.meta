@@ -1,142 +1,408 @@
 fileFormatVersion: 2
 guid: 6cdfe5800332b4cd894d37cebc26acdb
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: ezgif.com-gif-maker (2)_0
-    21300002: ezgif.com-gif-maker (2)_1
-    21300004: ezgif.com-gif-maker (2)_2
-    21300006: ezgif.com-gif-maker (2)_3
-    21300008: ezgif.com-gif-maker (2)_4
-    21300010: ezgif.com-gif-maker (2)_5
-    21300012: ezgif.com-gif-maker (2)_6
-    21300014: ezgif.com-gif-maker (2)_7
-    21300016: ezgif.com-gif-maker (2)_8
-    21300018: ezgif.com-gif-maker (2)_9
-    21300020: ezgif.com-gif-maker (2)_10
-    21300022: ezgif.com-gif-maker (2)_11
-    21300024: ezgif.com-gif-maker (2)_12
-    21300026: ezgif.com-gif-maker (2)_13
-    21300028: ezgif.com-gif-maker (2)_14
-    21300030: ezgif.com-gif-maker (2)_15
-    21300032: ezgif.com-gif-maker (2)_16
-    21300034: ezgif.com-gif-maker (2)_17
-    21300036: ezgif.com-gif-maker (2)_18
-    21300038: ezgif.com-gif-maker (2)_19
-    21300040: ezgif.com-gif-maker (2)_20
-    21300042: ezgif.com-gif-maker (2)_21
-    21300044: ezgif.com-gif-maker (2)_22
-    21300046: ezgif.com-gif-maker (2)_23
-    21300048: ezgif.com-gif-maker (2)_24
-    21300050: ezgif.com-gif-maker (2)_25
-    21300052: ezgif.com-gif-maker (2)_26
-    21300054: ezgif.com-gif-maker (2)_27
-    21300056: ezgif.com-gif-maker (2)_28
-    21300058: ezgif.com-gif-maker (2)_29
-    21300060: ezgif.com-gif-maker (2)_30
-    21300062: ezgif.com-gif-maker (2)_31
-    21300064: ezgif.com-gif-maker (2)_32
-    21300066: ezgif.com-gif-maker (2)_33
-    21300068: ezgif.com-gif-maker (2)_34
-    21300070: ezgif.com-gif-maker (2)_35
-    21300072: ezgif.com-gif-maker (2)_36
-    21300074: ezgif.com-gif-maker (2)_37
-    21300076: ezgif.com-gif-maker (2)_38
-    21300078: ezgif.com-gif-maker (2)_39
-    21300080: ezgif.com-gif-maker (2)_40
-    21300082: ezgif.com-gif-maker (2)_41
-    21300084: ezgif.com-gif-maker (2)_42
-    21300086: ezgif.com-gif-maker (2)_43
-    21300088: ezgif.com-gif-maker (2)_44
-    21300090: ezgif.com-gif-maker (2)_45
-    21300092: ezgif.com-gif-maker (2)_46
-    21300094: ezgif.com-gif-maker (2)_47
-    21300096: ezgif.com-gif-maker (2)_48
-    21300098: ezgif.com-gif-maker (2)_49
-    21300100: ezgif.com-gif-maker (2)_50
-    21300102: ezgif.com-gif-maker (2)_51
-    21300104: ezgif.com-gif-maker (2)_52
-    21300106: ezgif.com-gif-maker (2)_53
-    21300108: ezgif.com-gif-maker (2)_54
-    21300110: ezgif.com-gif-maker (2)_55
-    21300112: ezgif.com-gif-maker (2)_56
-    21300114: ezgif.com-gif-maker (2)_57
-    21300116: ezgif.com-gif-maker (2)_58
-    21300118: ezgif.com-gif-maker (2)_59
-    21300120: ezgif.com-gif-maker (2)_60
-    21300122: ezgif.com-gif-maker (2)_61
-    21300124: ezgif.com-gif-maker (2)_62
-    21300126: ezgif.com-gif-maker (2)_63
-    21300128: ezgif.com-gif-maker (2)_64
-    21300130: ezgif.com-gif-maker (2)_65
-    21300132: ezgif.com-gif-maker (2)_66
-    21300134: ezgif.com-gif-maker (2)_67
-    21300136: ezgif.com-gif-maker (2)_68
-    21300138: ezgif.com-gif-maker (2)_69
-    21300140: ezgif.com-gif-maker (2)_70
-    21300142: ezgif.com-gif-maker (2)_71
-    21300144: ezgif.com-gif-maker (2)_72
-    21300146: ezgif.com-gif-maker (2)_73
-    21300148: ezgif.com-gif-maker (2)_74
-    21300150: ezgif.com-gif-maker (2)_75
-    21300152: ezgif.com-gif-maker (2)_76
-    21300154: ezgif.com-gif-maker (2)_77
-    21300156: ezgif.com-gif-maker (2)_78
-    21300158: ezgif.com-gif-maker (2)_79
-    21300160: ezgif.com-gif-maker (2)_80
-    21300162: ezgif.com-gif-maker (2)_81
-    21300164: ezgif.com-gif-maker (2)_82
-    21300166: ezgif.com-gif-maker (2)_83
-    21300168: ezgif.com-gif-maker (2)_84
-    21300170: ezgif.com-gif-maker (2)_85
-    21300172: ezgif.com-gif-maker (2)_86
-    21300174: ezgif.com-gif-maker (2)_87
-    21300176: ezgif.com-gif-maker (2)_88
-    21300178: ezgif.com-gif-maker (2)_89
-    21300180: ezgif.com-gif-maker (2)_90
-    21300182: ezgif.com-gif-maker (2)_91
-    21300184: ezgif.com-gif-maker (2)_92
-    21300186: ezgif.com-gif-maker (2)_93
-    21300188: ezgif.com-gif-maker (2)_94
-    21300190: ezgif.com-gif-maker (2)_95
-    21300192: ezgif.com-gif-maker (2)_96
-    21300194: ezgif.com-gif-maker (2)_97
-    21300196: ezgif.com-gif-maker (2)_98
-    21300198: ezgif.com-gif-maker (2)_99
-    21300200: ezgif.com-gif-maker (2)_100
-    21300202: ezgif.com-gif-maker (2)_101
-    21300204: ezgif.com-gif-maker (2)_102
-    21300206: ezgif.com-gif-maker (2)_103
-    21300208: ezgif.com-gif-maker (2)_104
-    21300210: ezgif.com-gif-maker (2)_105
-    21300212: ezgif.com-gif-maker (2)_106
-    21300214: ezgif.com-gif-maker (2)_107
-    21300216: ezgif.com-gif-maker (2)_108
-    21300218: ezgif.com-gif-maker (2)_109
-    21300220: ezgif.com-gif-maker (2)_110
-    21300222: ezgif.com-gif-maker (2)_111
-    21300224: ezgif.com-gif-maker (2)_112
-    21300226: ezgif.com-gif-maker (2)_113
-    21300228: ezgif.com-gif-maker (2)_114
-    21300230: ezgif.com-gif-maker (2)_115
-    21300232: ezgif.com-gif-maker (2)_116
-    21300234: ezgif.com-gif-maker (2)_117
-    21300236: ezgif.com-gif-maker (2)_118
-    21300238: ezgif.com-gif-maker (2)_119
-    21300240: ezgif.com-gif-maker (2)_120
-    21300242: ezgif.com-gif-maker (2)_121
-    21300244: ezgif.com-gif-maker (2)_122
-    21300246: ezgif.com-gif-maker (2)_123
-    21300248: ezgif.com-gif-maker (2)_124
-    21300250: ezgif.com-gif-maker (2)_125
-    21300252: ezgif.com-gif-maker (2)_126
-    21300254: ezgif.com-gif-maker (2)_127
-    21300256: ezgif.com-gif-maker (2)_128
-    21300258: ezgif.com-gif-maker (2)_129
-    21300260: ezgif.com-gif-maker (2)_130
-    21300262: ezgif.com-gif-maker (2)_131
-    21300264: ezgif.com-gif-maker (2)_132
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: ezgif.com-gif-maker (2)_0
+  - first:
+      213: 21300002
+    second: ezgif.com-gif-maker (2)_1
+  - first:
+      213: 21300004
+    second: ezgif.com-gif-maker (2)_2
+  - first:
+      213: 21300006
+    second: ezgif.com-gif-maker (2)_3
+  - first:
+      213: 21300008
+    second: ezgif.com-gif-maker (2)_4
+  - first:
+      213: 21300010
+    second: ezgif.com-gif-maker (2)_5
+  - first:
+      213: 21300012
+    second: ezgif.com-gif-maker (2)_6
+  - first:
+      213: 21300014
+    second: ezgif.com-gif-maker (2)_7
+  - first:
+      213: 21300016
+    second: ezgif.com-gif-maker (2)_8
+  - first:
+      213: 21300018
+    second: ezgif.com-gif-maker (2)_9
+  - first:
+      213: 21300020
+    second: ezgif.com-gif-maker (2)_10
+  - first:
+      213: 21300022
+    second: ezgif.com-gif-maker (2)_11
+  - first:
+      213: 21300024
+    second: ezgif.com-gif-maker (2)_12
+  - first:
+      213: 21300026
+    second: ezgif.com-gif-maker (2)_13
+  - first:
+      213: 21300028
+    second: ezgif.com-gif-maker (2)_14
+  - first:
+      213: 21300030
+    second: ezgif.com-gif-maker (2)_15
+  - first:
+      213: 21300032
+    second: ezgif.com-gif-maker (2)_16
+  - first:
+      213: 21300034
+    second: ezgif.com-gif-maker (2)_17
+  - first:
+      213: 21300036
+    second: ezgif.com-gif-maker (2)_18
+  - first:
+      213: 21300038
+    second: ezgif.com-gif-maker (2)_19
+  - first:
+      213: 21300040
+    second: ezgif.com-gif-maker (2)_20
+  - first:
+      213: 21300042
+    second: ezgif.com-gif-maker (2)_21
+  - first:
+      213: 21300044
+    second: ezgif.com-gif-maker (2)_22
+  - first:
+      213: 21300046
+    second: ezgif.com-gif-maker (2)_23
+  - first:
+      213: 21300048
+    second: ezgif.com-gif-maker (2)_24
+  - first:
+      213: 21300050
+    second: ezgif.com-gif-maker (2)_25
+  - first:
+      213: 21300052
+    second: ezgif.com-gif-maker (2)_26
+  - first:
+      213: 21300054
+    second: ezgif.com-gif-maker (2)_27
+  - first:
+      213: 21300056
+    second: ezgif.com-gif-maker (2)_28
+  - first:
+      213: 21300058
+    second: ezgif.com-gif-maker (2)_29
+  - first:
+      213: 21300060
+    second: ezgif.com-gif-maker (2)_30
+  - first:
+      213: 21300062
+    second: ezgif.com-gif-maker (2)_31
+  - first:
+      213: 21300064
+    second: ezgif.com-gif-maker (2)_32
+  - first:
+      213: 21300066
+    second: ezgif.com-gif-maker (2)_33
+  - first:
+      213: 21300068
+    second: ezgif.com-gif-maker (2)_34
+  - first:
+      213: 21300070
+    second: ezgif.com-gif-maker (2)_35
+  - first:
+      213: 21300072
+    second: ezgif.com-gif-maker (2)_36
+  - first:
+      213: 21300074
+    second: ezgif.com-gif-maker (2)_37
+  - first:
+      213: 21300076
+    second: ezgif.com-gif-maker (2)_38
+  - first:
+      213: 21300078
+    second: ezgif.com-gif-maker (2)_39
+  - first:
+      213: 21300080
+    second: ezgif.com-gif-maker (2)_40
+  - first:
+      213: 21300082
+    second: ezgif.com-gif-maker (2)_41
+  - first:
+      213: 21300084
+    second: ezgif.com-gif-maker (2)_42
+  - first:
+      213: 21300086
+    second: ezgif.com-gif-maker (2)_43
+  - first:
+      213: 21300088
+    second: ezgif.com-gif-maker (2)_44
+  - first:
+      213: 21300090
+    second: ezgif.com-gif-maker (2)_45
+  - first:
+      213: 21300092
+    second: ezgif.com-gif-maker (2)_46
+  - first:
+      213: 21300094
+    second: ezgif.com-gif-maker (2)_47
+  - first:
+      213: 21300096
+    second: ezgif.com-gif-maker (2)_48
+  - first:
+      213: 21300098
+    second: ezgif.com-gif-maker (2)_49
+  - first:
+      213: 21300100
+    second: ezgif.com-gif-maker (2)_50
+  - first:
+      213: 21300102
+    second: ezgif.com-gif-maker (2)_51
+  - first:
+      213: 21300104
+    second: ezgif.com-gif-maker (2)_52
+  - first:
+      213: 21300106
+    second: ezgif.com-gif-maker (2)_53
+  - first:
+      213: 21300108
+    second: ezgif.com-gif-maker (2)_54
+  - first:
+      213: 21300110
+    second: ezgif.com-gif-maker (2)_55
+  - first:
+      213: 21300112
+    second: ezgif.com-gif-maker (2)_56
+  - first:
+      213: 21300114
+    second: ezgif.com-gif-maker (2)_57
+  - first:
+      213: 21300116
+    second: ezgif.com-gif-maker (2)_58
+  - first:
+      213: 21300118
+    second: ezgif.com-gif-maker (2)_59
+  - first:
+      213: 21300120
+    second: ezgif.com-gif-maker (2)_60
+  - first:
+      213: 21300122
+    second: ezgif.com-gif-maker (2)_61
+  - first:
+      213: 21300124
+    second: ezgif.com-gif-maker (2)_62
+  - first:
+      213: 21300126
+    second: ezgif.com-gif-maker (2)_63
+  - first:
+      213: 21300128
+    second: ezgif.com-gif-maker (2)_64
+  - first:
+      213: 21300130
+    second: ezgif.com-gif-maker (2)_65
+  - first:
+      213: 21300132
+    second: ezgif.com-gif-maker (2)_66
+  - first:
+      213: 21300134
+    second: ezgif.com-gif-maker (2)_67
+  - first:
+      213: 21300136
+    second: ezgif.com-gif-maker (2)_68
+  - first:
+      213: 21300138
+    second: ezgif.com-gif-maker (2)_69
+  - first:
+      213: 21300140
+    second: ezgif.com-gif-maker (2)_70
+  - first:
+      213: 21300142
+    second: ezgif.com-gif-maker (2)_71
+  - first:
+      213: 21300144
+    second: ezgif.com-gif-maker (2)_72
+  - first:
+      213: 21300146
+    second: ezgif.com-gif-maker (2)_73
+  - first:
+      213: 21300148
+    second: ezgif.com-gif-maker (2)_74
+  - first:
+      213: 21300150
+    second: ezgif.com-gif-maker (2)_75
+  - first:
+      213: 21300152
+    second: ezgif.com-gif-maker (2)_76
+  - first:
+      213: 21300154
+    second: ezgif.com-gif-maker (2)_77
+  - first:
+      213: 21300156
+    second: ezgif.com-gif-maker (2)_78
+  - first:
+      213: 21300158
+    second: ezgif.com-gif-maker (2)_79
+  - first:
+      213: 21300160
+    second: ezgif.com-gif-maker (2)_80
+  - first:
+      213: 21300162
+    second: ezgif.com-gif-maker (2)_81
+  - first:
+      213: 21300164
+    second: ezgif.com-gif-maker (2)_82
+  - first:
+      213: 21300166
+    second: ezgif.com-gif-maker (2)_83
+  - first:
+      213: 21300168
+    second: ezgif.com-gif-maker (2)_84
+  - first:
+      213: 21300170
+    second: ezgif.com-gif-maker (2)_85
+  - first:
+      213: 21300172
+    second: ezgif.com-gif-maker (2)_86
+  - first:
+      213: 21300174
+    second: ezgif.com-gif-maker (2)_87
+  - first:
+      213: 21300176
+    second: ezgif.com-gif-maker (2)_88
+  - first:
+      213: 21300178
+    second: ezgif.com-gif-maker (2)_89
+  - first:
+      213: 21300180
+    second: ezgif.com-gif-maker (2)_90
+  - first:
+      213: 21300182
+    second: ezgif.com-gif-maker (2)_91
+  - first:
+      213: 21300184
+    second: ezgif.com-gif-maker (2)_92
+  - first:
+      213: 21300186
+    second: ezgif.com-gif-maker (2)_93
+  - first:
+      213: 21300188
+    second: ezgif.com-gif-maker (2)_94
+  - first:
+      213: 21300190
+    second: ezgif.com-gif-maker (2)_95
+  - first:
+      213: 21300192
+    second: ezgif.com-gif-maker (2)_96
+  - first:
+      213: 21300194
+    second: ezgif.com-gif-maker (2)_97
+  - first:
+      213: 21300196
+    second: ezgif.com-gif-maker (2)_98
+  - first:
+      213: 21300198
+    second: ezgif.com-gif-maker (2)_99
+  - first:
+      213: 21300200
+    second: ezgif.com-gif-maker (2)_100
+  - first:
+      213: 21300202
+    second: ezgif.com-gif-maker (2)_101
+  - first:
+      213: 21300204
+    second: ezgif.com-gif-maker (2)_102
+  - first:
+      213: 21300206
+    second: ezgif.com-gif-maker (2)_103
+  - first:
+      213: 21300208
+    second: ezgif.com-gif-maker (2)_104
+  - first:
+      213: 21300210
+    second: ezgif.com-gif-maker (2)_105
+  - first:
+      213: 21300212
+    second: ezgif.com-gif-maker (2)_106
+  - first:
+      213: 21300214
+    second: ezgif.com-gif-maker (2)_107
+  - first:
+      213: 21300216
+    second: ezgif.com-gif-maker (2)_108
+  - first:
+      213: 21300218
+    second: ezgif.com-gif-maker (2)_109
+  - first:
+      213: 21300220
+    second: ezgif.com-gif-maker (2)_110
+  - first:
+      213: 21300222
+    second: ezgif.com-gif-maker (2)_111
+  - first:
+      213: 21300224
+    second: ezgif.com-gif-maker (2)_112
+  - first:
+      213: 21300226
+    second: ezgif.com-gif-maker (2)_113
+  - first:
+      213: 21300228
+    second: ezgif.com-gif-maker (2)_114
+  - first:
+      213: 21300230
+    second: ezgif.com-gif-maker (2)_115
+  - first:
+      213: 21300232
+    second: ezgif.com-gif-maker (2)_116
+  - first:
+      213: 21300234
+    second: ezgif.com-gif-maker (2)_117
+  - first:
+      213: 21300236
+    second: ezgif.com-gif-maker (2)_118
+  - first:
+      213: 21300238
+    second: ezgif.com-gif-maker (2)_119
+  - first:
+      213: 21300240
+    second: ezgif.com-gif-maker (2)_120
+  - first:
+      213: 21300242
+    second: ezgif.com-gif-maker (2)_121
+  - first:
+      213: 21300244
+    second: ezgif.com-gif-maker (2)_122
+  - first:
+      213: 21300246
+    second: ezgif.com-gif-maker (2)_123
+  - first:
+      213: 21300248
+    second: ezgif.com-gif-maker (2)_124
+  - first:
+      213: 21300250
+    second: ezgif.com-gif-maker (2)_125
+  - first:
+      213: 21300252
+    second: ezgif.com-gif-maker (2)_126
+  - first:
+      213: 21300254
+    second: ezgif.com-gif-maker (2)_127
+  - first:
+      213: 21300256
+    second: ezgif.com-gif-maker (2)_128
+  - first:
+      213: 21300258
+    second: ezgif.com-gif-maker (2)_129
+  - first:
+      213: 21300260
+    second: ezgif.com-gif-maker (2)_130
+  - first:
+      213: 21300262
+    second: ezgif.com-gif-maker (2)_131
+  - first:
+      213: 21300264
+    second: ezgif.com-gif-maker (2)_132
   externalObjects: {}
-  serializedVersion: 9
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -156,6 +422,7 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -190,8 +457,10 @@ TextureImporter:
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
   platformSettings:
-  - serializedVersion: 2
+  - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -202,7 +471,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -213,6 +483,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -232,6 +503,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 67c54c64738354fa5bcc3f1fe1262f82
+      internalID: 21300000
       vertices: []
       indices: 
       edges: []
@@ -252,6 +524,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 5c41277e6874f4d8dbd908e6189c7a03
+      internalID: 21300002
       vertices: []
       indices: 
       edges: []
@@ -272,6 +545,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: c45d84c05242640a8948a7bfd1b75ff9
+      internalID: 21300004
       vertices: []
       indices: 
       edges: []
@@ -292,6 +566,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: e6e50808fe6494fef98f9c04dc9cc7c8
+      internalID: 21300006
       vertices: []
       indices: 
       edges: []
@@ -312,6 +587,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: ee12d4ef625a446318ec5bbb2aa9d398
+      internalID: 21300008
       vertices: []
       indices: 
       edges: []
@@ -332,6 +608,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: eb271bfca9cca411d965b9f50d90077b
+      internalID: 21300010
       vertices: []
       indices: 
       edges: []
@@ -352,6 +629,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: c91b85b6932084255af59ac6d7f6642c
+      internalID: 21300012
       vertices: []
       indices: 
       edges: []
@@ -372,6 +650,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: d264ec1643ec54839b40fa51e7b3b45b
+      internalID: 21300014
       vertices: []
       indices: 
       edges: []
@@ -392,6 +671,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 63145a61d2e374dc49ca0357672efb14
+      internalID: 21300016
       vertices: []
       indices: 
       edges: []
@@ -412,6 +692,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 7a43be2b232a14456b24acb201514884
+      internalID: 21300018
       vertices: []
       indices: 
       edges: []
@@ -432,6 +713,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: e2731a4291c06489c828b7106c6e870d
+      internalID: 21300020
       vertices: []
       indices: 
       edges: []
@@ -452,6 +734,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: a8f04833d7f174896bfa14a22acdd806
+      internalID: 21300022
       vertices: []
       indices: 
       edges: []
@@ -472,6 +755,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: c86d5fbefc3e8406a9d2701bf94733a3
+      internalID: 21300024
       vertices: []
       indices: 
       edges: []
@@ -492,6 +776,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 143592490dfc84ff290407a218e87f28
+      internalID: 21300026
       vertices: []
       indices: 
       edges: []
@@ -512,6 +797,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 3a6b5ae21f08249c2949efb99b97de60
+      internalID: 21300028
       vertices: []
       indices: 
       edges: []
@@ -532,6 +818,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: b8298fd2fc5424e1aab18263c9b6ead8
+      internalID: 21300030
       vertices: []
       indices: 
       edges: []
@@ -552,6 +839,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 2508a1355cbe8417eb34c8776ce6ec7c
+      internalID: 21300032
       vertices: []
       indices: 
       edges: []
@@ -572,6 +860,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 3c9225a512fff4e9594748e9e5e3692b
+      internalID: 21300034
       vertices: []
       indices: 
       edges: []
@@ -592,6 +881,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: b52ed17fee4094e99a0233d54fc9d44f
+      internalID: 21300036
       vertices: []
       indices: 
       edges: []
@@ -612,6 +902,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: edf19b31b9e4840e3888a8b034faeea3
+      internalID: 21300038
       vertices: []
       indices: 
       edges: []
@@ -632,6 +923,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 417e8af291f894e529288cdf7c4a40c4
+      internalID: 21300040
       vertices: []
       indices: 
       edges: []
@@ -652,6 +944,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 3d8a3c1fa59ab4c89ba0665f0c8404a4
+      internalID: 21300042
       vertices: []
       indices: 
       edges: []
@@ -672,6 +965,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: d2f938917129d44829e0ea8427be21ce
+      internalID: 21300044
       vertices: []
       indices: 
       edges: []
@@ -692,6 +986,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 639321abc55d5429492969dcfd3b2b0d
+      internalID: 21300046
       vertices: []
       indices: 
       edges: []
@@ -712,6 +1007,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: ccbf4121eb3c54f30a3563343c486c9a
+      internalID: 21300048
       vertices: []
       indices: 
       edges: []
@@ -732,6 +1028,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: faa64e5d8eb454e45893f440d13be0a2
+      internalID: 21300050
       vertices: []
       indices: 
       edges: []
@@ -752,6 +1049,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 88ec959c9a7004e97b42562854c33ed1
+      internalID: 21300052
       vertices: []
       indices: 
       edges: []
@@ -772,6 +1070,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 9cbf4fa87724e4f5b927fde96d5d9129
+      internalID: 21300054
       vertices: []
       indices: 
       edges: []
@@ -780,10 +1079,12 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 7b36cdd37f023421583ac6180382937b
+    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
+    secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
